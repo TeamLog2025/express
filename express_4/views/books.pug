@@ -1,0 +1,12 @@
+doctype html
+html
+    head
+        title 도서 목록
+    body
+        h1 도서 목록
+    ol
+        each book in books
+            li #{book.title} - #{book.author} (#{book.year})
+
+    form(action="/", method="get")
+        button(type="submit") 돌아가기
