@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title 날씨 정보
+    body
+        h1 날씨 정보
+        p 현재 온도: #{temp}도
+        p 상태: #{condition}
+
+    if temp >= 30
+        p 매우 더워요!
+    else if temp >= 20
+        p 따뜻해요!
+    else if temp >= 10
+        p 쌀쌀해요!
+    else
+        p 추워요!
