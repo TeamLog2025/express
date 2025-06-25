@@ -1,0 +1,9 @@
+doctype html
+html
+    head
+        title book
+    body
+        h1= book.title
+        p 저자: #{book.author}
+        p 출판연도: #{book.year}
+        a(href="/") 목록으로

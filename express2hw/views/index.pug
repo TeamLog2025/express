@@ -1,0 +1,12 @@
+doctype html
+html
+    head
+        title List
+    body
+        h1 도서 목록
+        each book in books
+            div
+                a(href=`/book/${book.title}`)= book.title
+    br
+
+    a(href="/add") 도서 추가
